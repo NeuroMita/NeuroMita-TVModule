@@ -1,0 +1,8 @@
+{
+  "Id": "TVModule",
+  "Version": "1.0.0",
+  "Variables": {
+    "VLC_BIN_PATH": "VLC",
+    "YTDLP_PATH": "Tools/yt-dlp.exe"
+  }
+}
