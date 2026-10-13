@@ -1,3 +1,15 @@
+# TVModule 1.0.2 - Windows x64
+
+- Added QuickJS-NG 0.17.0 (`Tools/qjs.exe`) with its upstream MIT license.
+- Updated yt-dlp to nightly 2026.10.10.233141, including the new default
+  `tv_samsung` client addressing "The page needs to be reloaded".
+- Added `JSRUNTIME_PATH` so Unity enables the packaged runtime explicitly.
+- Updated the build allowlist and upstream dependency license notices.
+- VLC remains 3.0.21. User configuration and cookies are excluded.
+
+Requires the Unity TV runtime update to pass the QuickJS path, retain warnings,
+report native VLC errors, and retain the nightly update channel.
+
 # TVModule 1.0.1 — Windows x64
 
 Готовый пакет дополнительных инструментов телевизора NeuroMita.

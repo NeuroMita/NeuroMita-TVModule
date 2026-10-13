@@ -36,7 +36,7 @@ git submodule update --remote Modules/TVModule
 Новая версия применяется после перезапуска игры;
 в Play Mode после перезапуска редактора Unity. Настройки и cookies сохраняются.
 
-Для ручной установки скачайте `TVModule-1.0.1-win-x64.zip` из Releases и
+Для ручной установки скачайте `TVModule-1.0.2-win-x64.zip` из Releases и
 распакуйте его содержимое в `Modules/TVModule` рядом с игрой. В этой папке
 должны сразу находиться `module.json`, `VLC`, `Tools` и `LICENSES`, без
 дополнительного уровня вложенности.
@@ -56,3 +56,19 @@ Chrome/Edge на Windows могут не позволять читать заш�
 
 Git-копии модуля обновляются через Git. Для проверки установки в редакторе
 перенесите текущий submodule за пределы `Modules`, не удаляя `.git/modules`.
+
+### YouTube JavaScript runtime
+
+TVModule 1.0.2 includes QuickJS-NG 0.17.0 in `Tools/qjs.exe` and yt-dlp nightly
+2026.10.10.233141. The Unity integration explicitly passes `JSRUNTIME_PATH`
+to yt-dlp; no JavaScript installation in the user's PATH is required.
+The challenge solver scripts are bundled in the official yt-dlp executable.
+The runtime runs as a child process during extraction, not permanently.
+Preserve `LICENSES/QuickJS-NG-LICENSE.txt` when redistributing the module.
+
+The Unity integration keeps yt-dlp on the nightly channel for current YouTube
+fixes. Warnings are recorded even when extraction succeeds. An unavailable
+browser profile or a cookie decryption failure is not an authentication request;
+check the technical details and change the browser/profile or use a local
+Netscape cookies export. No anonymous fallback silently replaces the selected
+account session.

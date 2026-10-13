@@ -24,7 +24,7 @@ The same source archive is attached to this module release. Additional upstream
 dependency sources referenced by those recipes are mirrored at
 https://download.videolan.org/pub/contrib/ .
 
-## yt-dlp 2026.08.19
+## yt-dlp nightly 2026.10.10.233141
 
 Copyright yt-dlp contributors and bundled dependency authors.
 yt-dlp source uses the Unlicense. The standalone Windows executable contains
@@ -33,7 +33,21 @@ upstream THIRD_PARTY_LICENSES file, not just the Unlicense.
 
 License: LICENSES/yt-dlp-LICENSE.txt.
 Bundled dependencies: LICENSES/yt-dlp-THIRD_PARTY_LICENSES.txt.
-Exact source and release: https://github.com/yt-dlp/yt-dlp/releases/tag/2026.08.19
+Exact source and release: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2026.10.10.233141
+Exact source: https://github.com/yt-dlp/yt-dlp/commit/897341241f2bfb2439fe0367f4c7c9ccd29a3828
+Executable SHA256: e7cafc44db8aa433da8dd78303b9157f2c1dd509c4cbfcd8418081b7e1d26a7a
+
+## QuickJS-NG 0.17.0
+
+The unmodified upstream Windows x64 interpreter is redistributed as Tools/qjs.exe.
+QuickJS-NG uses the MIT License, which permits copying, publication and
+redistribution when the copyright and permission notice are preserved.
+The full upstream notice is included in LICENSES/QuickJS-NG-LICENSE.txt.
+No qjsc compiler, browser or system-wide installation is required.
+
+Exact source and binary release: https://github.com/quickjs-ng/quickjs/releases/tag/v0.17.0
+Original asset: qjs-windows-x86_64.exe
+SHA256: 2aeabf0092c3262d6b2609824418f7dd7ed1f1df939f73b2b15645230cac0d77
 
 ## User data
 

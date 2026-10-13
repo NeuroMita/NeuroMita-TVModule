@@ -1,8 +1,9 @@
 {
   "Id": "TVModule",
-  "Version": "1.0.1",
+  "Version": "1.0.2",
   "Variables": {
     "VLC_BIN_PATH": "VLC",
-    "YTDLP_PATH": "Tools/yt-dlp.exe"
+    "YTDLP_PATH": "Tools/yt-dlp.exe",
+    "JSRUNTIME_PATH": "Tools/qjs.exe"
   }
 }

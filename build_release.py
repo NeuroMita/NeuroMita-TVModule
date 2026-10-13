@@ -9,7 +9,7 @@ version = json.loads((root / "module.json").read_text(encoding="utf-8-sig"))["Ve
 output = root / "dist"
 output.mkdir(exist_ok=True)
 archive = output / f"TVModule-{version}-win-x64.zip"
-files = [root / name for name in ("module.json", "README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "Tools/yt-dlp.exe")]
+files = [root / name for name in ("module.json", "README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "Tools/yt-dlp.exe", "Tools/qjs.exe")]
 files += [p for folder in ("VLC", "LICENSES") for p in (root / folder).rglob("*") if p.is_file() and p.suffix != ".meta"]
 with zipfile.ZipFile(archive, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as package:
     for path in sorted(files):
